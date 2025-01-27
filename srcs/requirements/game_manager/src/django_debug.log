@@ -1,0 +1,35 @@
+INFO models Player account "luc" successfully created.
+DEBUG views Reçu: game_mode=PONG_CLASSIC, modifiers=, players_list=['luc'], teams=[['luc'], []], ai=True
+DEBUG game_manager team_list = [['luc'], ['b5fb1992-1632-447e-b1c5-5a6bf4b5448d']]
+DEBUG game_manager send to http://pong:8000/api/pong/newgame/: {'gameId': '96d27c7d-03cf-4cdd-b0e8-c5cecca26cce', 'adminId': '25738044-bcf3-4dc9-ad92-bbf109e05e68', 'gameMode': 'PONG_CLASSIC', 'playersList': ['luc', 'b5fb1992-1632-447e-b1c5-5a6bf4b5448d'], 'teamsList': [['luc'], ['b5fb1992-1632-447e-b1c5-5a6bf4b5448d']], 'special_id': [{'private': '6911c487-2e19-4ad2-bfc2-0bcfeee31012', 'public': 'b5fb1992-1632-447e-b1c5-5a6bf4b5448d', 'nickname': 'AI'}]}
+DEBUG game_manager Game service 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce created with players: ['luc', 'b5fb1992-1632-447e-b1c5-5a6bf4b5448d']
+DEBUG admin_manager start_new_connection ws - game_id = 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce, admin_id = 25738044-bcf3-4dc9-ad92-bbf109e05e68, ws_url = ws://pong:8000/ws/pong/96d27c7d-03cf-4cdd-b0e8-c5cecca26cce/25738044-bcf3-4dc9-ad92-bbf109e05e68/
+DEBUG admin_manager new thread created to ws://pong:8000/ws/pong/96d27c7d-03cf-4cdd-b0e8-c5cecca26cce/25738044-bcf3-4dc9-ad92-bbf109e05e68/ !
+DEBUG admin_manager thread in game : 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce is running...
+INFO models Game '96d27c7d-03cf-4cdd-b0e8-c5cecca26cce' created successfully with modifiers [].
+DEBUG game_manager Raw PlayerGameHistory queryset for game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: <QuerySet [<PlayerGameHistory: PlayerGameHistory object (1)>]>
+DEBUG game_manager Player usernames for game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: ['luc']
+DEBUG admin_manager Websocket connected : ws://pong:8000/ws/pong/96d27c7d-03cf-4cdd-b0e8-c5cecca26cce/25738044-bcf3-4dc9-ad92-bbf109e05e68/
+DEBUG admin_manager Game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: Received message: {'type': 'player_connection', 'username': 'b5fb1992-1632-447e-b1c5-5a6bf4b5448d'}
+DEBUG admin_manager Game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: Received message: {'type': 'player_connection', 'username': 'luc'}
+DEBUG admin_manager Game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: Received message: {'type': 'export_status', 'status': 'loading'}
+DEBUG admin_manager Game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: Received message: {'type': 'export_teams', 'teams': {'left': ['luc'], 'right': ['AI']}}
+DEBUG admin_manager luc
+DEBUG admin_manager AI
+DEBUG admin_manager Game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: Received message: {'type': 'export_status', 'status': 'in_progress'}
+DEBUG game_manager 15.84585976600647s elapsed with status : waiting
+DEBUG admin_manager Game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: Received message: {'type': 'update_score', 'team': 'right', 'score': '1'}
+DEBUG admin_manager Game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: Received message: {'type': 'update_score', 'team': 'right', 'score': '2'}
+DEBUG admin_manager Game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce: Received message: {'type': 'export_status', 'status': 'aborted', 'team': 'right', 'score': 2}
+DEBUG admin_manager Cleanup after game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce. Closing resources...
+DEBUG admin_manager users change status : {'players': ['luc'], 'spectators': []}
+DEBUG admin_manager Thread for game 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce cleaned up.
+DEBUG admin_manager All threads are closed.
+DEBUG thread Stopping matchmaking service...
+DEBUG matchmaking Matchmaking stopping...
+DEBUG thread Stopping matchmaking thread...
+DEBUG thread Matchmaking service stopped.
+DEBUG thread Stopping game_manager service...
+DEBUG game_manager Game_manager stopping...
+DEBUG thread Stopping game_manager thread...
+DEBUG thread Game_manager service stopped.

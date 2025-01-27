@@ -1,0 +1,139 @@
+DEBUG 2025-01-08 10:25:36,621 views request body:, <WSGIRequest: POST '/api/ia/create_ia/'>
+DEBUG 2025-01-08 10:25:36,622 views Request body: b'{"game_id":"96d27c7d-03cf-4cdd-b0e8-c5cecca26cce","ai_id":{"private":"6911c487-2e19-4ad2-bfc2-0bcfeee31012","public":"b5fb1992-1632-447e-b1c5-5a6bf4b5448d","nickname":"AI"}}'
+DEBUG 2025-01-08 10:25:36,622 views Test message - within create_ia view.
+DEBUG 2025-01-08 10:25:36,622 run_ia WS URL : ws://pong:8000/ws/pong/96d27c7d-03cf-4cdd-b0e8-c5cecca26cce/6911c487-2e19-4ad2-bfc2-0bcfeee31012/
+DEBUG 2025-01-08 10:25:36,622 ia IA instantiated.
+DEBUG 2025-01-08 10:25:36,658 ia Connexion WebSocket établie.
+DEBUG 2025-01-08 10:25:36,659 ia En attente d'un adversaire...
+DEBUG 2025-01-08 10:25:36,977 ia :::{'type': 'export_data', 'data': {'input': {'up': 1, 'down': 2, 'stop_up': 3, 'stop_down': 4}, 'key': {'up': 'w', 'down': 's'}, 'arena': {'wallWidth': 1, 'size': {'x': 86, 'y': 64, 'z': 2}}, 'ball': {'rad': 1, 'pos': {'x': 0, 'y': 0, 'z': 1}, 'spd': {'x': 30, 'y': 30}}, 'padel': {'pos': {'x': 39, 'y': 0, 'z': 1.25}, 'spd': 45, 'size': {'x': 4, 'y': 12, 'z': 4}}, 'teams': {'left': ['luc'], 'right': ['AI']}, 'map': 'island', 'game_mode': 'PONG_CLASSIC'}}
+DEBUG 2025-01-08 10:25:36,977 ia Joueur : p2
+DEBUG 2025-01-08 10:25:36,977 ia PADEL{'pos': {'x': 39, 'y': 0, 'z': 1.25}, 'spd': 45, 'size': {'x': 4, 'y': 12, 'z': 4}}
+DEBUG 2025-01-08 10:25:36,977 ia paddle height 12
+DEBUG 2025-01-08 10:25:36,977 ia Base : PADDLE_MAX_Y :26.0 et PADDLE_MIN_Y-26.0
+pos paddle x = 39
+ court height = 32.0
+DEBUG 2025-01-08 10:25:38,330 ia Le jeu a commencé!
+DEBUG 2025-01-08 10:25:38,332 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:25:38,861 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:25:42,361 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:25:42,415 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:25:43,386 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:25:43,413 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:25:43,548 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 20.90322087657613, 'z': 1}, 'bs': {'x': -23.88113876260039, 'y': 27.41457255910759}, 'pp': {'p1': -26.0, 'p2': 25.076615810394287}}
+DEBUG 2025-01-08 10:25:43,548 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:25:44,113 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:25:46,619 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -19.564519721627004, 'z': 1}, 'bs': {'x': 24.241728610514247, 'y': 41.76016530170618}, 'pp': {'p1': -18.683502435684204, 'p2': -0.3441166877746582}}
+DEBUG 2025-01-08 10:25:46,619 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:25:47,023 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:25:49,657 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': -19.77663524671875, 'z': 1}, 'bs': {'x': -31.819805153394636, 'y': 31.819805153394636}, 'pp': {'p1': -18.688759565353394, 'p2': -18.505064249038696}}
+DEBUG 2025-01-08 10:25:49,657 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:25:50,087 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:25:51,974 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 9.458907764802177, 'z': 1}, 'bs': {'x': 32.009219983224, 'y': -46.093276775842554}, 'pp': {'p1': 8.0211820602417, 'p2': 0.8429324626922607}}
+DEBUG 2025-01-08 10:25:51,975 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:25:52,540 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:25:54,262 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 28.863577719799245, 'z': 1}, 'bs': {'x': -39.784554927896465, 'y': -36.249976700831276}, 'pp': {'p1': 0.7848289012908936, 'p2': 26.27259135246277}}
+DEBUG 2025-01-08 10:25:54,262 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:25:54,854 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:25:56,123 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -25.121527045338098, 'z': 1}, 'bs': {'x': 50.87989824030528, 'y': 19.87496025011925}, 'pp': {'p1': -26.0, 'p2': -0.37340641021728516}}
+DEBUG 2025-01-08 10:25:56,124 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:25:56,234 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:25:57,583 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 3.3947724935805965, 'z': 1}, 'bs': {'x': -59.01735999252936, 'y': 12.571745323852408}, 'pp': {'p1': -2.916179656982422, 'p2': 4.6243321895599365}}
+DEBUG 2025-01-08 10:25:57,583 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:25:57,691 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:25:58,822 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 18.94543341586151, 'z': 1}, 'bs': {'x': 64.34015210126405, 'y': 11.817578957375028}, 'pp': {'p1': 17.70532989501953, 'p2': -0.26162266731262207}}
+DEBUG 2025-01-08 10:25:58,823 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:25:59,415 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:25:59,980 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 29.685712845002733, 'z': 1}, 'bs': {'x': -69.63575181639445, 'y': -11.141720290623113}, 'pp': {'p1': 17.553455591201782, 'p2': 26.39265775680542}}
+DEBUG 2025-01-08 10:25:59,980 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:00,573 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:01,030 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 18.005444928078752, 'z': 1}, 'bs': {'x': 74.90633420552356, 'y': -10.53370324765175}, 'pp': {'p1': 17.553455591201782, 'p2': -0.29119133949279785}}
+DEBUG 2025-01-08 10:26:01,030 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:01,218 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:02,938 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -1.3540280821028214, 'z': 1}, 'bs': {'x': 80.49844718999243, 'y': -20.12461179749811}, 'pp': {'p1': -6.6319801807403564, 'p2': 8.165770769119263}}
+DEBUG 2025-01-08 10:26:02,938 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:03,585 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:04,689 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -30.979346922650613, 'z': 1}, 'bs': {'x': 95.78262852211515, 'y': -8.620436566990364}, 'pp': {'p1': -26.0, 'p2': -20.948331356048584}}
+DEBUG 2025-01-08 10:26:04,689 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:04,824 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:06,201 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -18.706404488712252, 'z': 1}, 'bs': {'x': 101.81016518262444, 'y': 17.038478057422687}, 'pp': {'p1': -18.611490488052368, 'p2': -27.000510692596436}}
+DEBUG 2025-01-08 10:26:06,201 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:06,684 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:07,601 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 1.2732910663181372, 'z': 1}, 'bs': {'x': 109.93888018826269, 'y': 21.042988786034655}, 'pp': {'p1': 4.399695634841919, 'p2': -5.243750810623169}}
+DEBUG 2025-01-08 10:26:07,601 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:08,087 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:08,920 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 24.70728972211682, 'z': 1}, 'bs': {'x': 124.9070668535163, 'y': 10.393524423831794}, 'pp': {'p1': 26.0, 'p2': 16.63352608680725}}
+DEBUG 2025-01-08 10:26:08,920 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:09,135 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:10,081 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 27.74298671330401, 'z': 1}, 'bs': {'x': 139.20328154877325, 'y': -1.5979968545139787}, 'pp': {'p1': 26.083245038986206, 'p2': 26.340419054031372}}
+DEBUG 2025-01-08 10:26:11,136 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 25.147192891521094, 'z': 1}, 'bs': {'x': 147.08710135363802, 'y': -5.883484054145521}, 'pp': {'p1': 24.849300146102905, 'p2': 26.340419054031372}}
+DEBUG 2025-01-08 10:26:11,136 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:11,243 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:12,613 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 16.92594874069034, 'z': 1}, 'bs': {'x': -162.33853516648472, 'y': -5.366563145999495}, 'pp': {'p1': 0.6866738796234131, 'p2': 21.505136489868164}}
+DEBUG 2025-01-08 10:26:12,613 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:13,103 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:13,130 ia The right scores : 1
+DEBUG 2025-01-08 10:26:14,005 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:14,569 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:15,027 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:15,055 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:16,349 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 21.023156803976633, 'z': 1}, 'bs': {'x': -23.88113876260039, 'y': 27.41457255910759}, 'pp': {'p1': -10.164857149124146, 'p2': 26.016322374343872}}
+DEBUG 2025-01-08 10:26:16,349 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:16,942 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:19,416 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -20.21317315955925, 'z': 1}, 'bs': {'x': 32.0, 'y': 18.0}, 'pp': {'p1': -17.473007678985596, 'p2': -0.6519269943237305}}
+DEBUG 2025-01-08 10:26:19,416 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:19,927 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:21,703 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 20.850209172469757, 'z': 1}, 'bs': {'x': -37.442263245202966, 'y': 16.641005886756876}, 'pp': {'p1': 5.5482635498046875, 'p2': 22.358261346817017}}
+DEBUG 2025-01-08 10:26:21,703 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:22,215 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:23,666 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 8.860745372863194, 'z': 1}, 'bs': {'x': 37.16470731235832, 'y': -30.103412923010232}, 'pp': {'p1': 5.536944627761841, 'p2': -0.6731915473937988}}
+DEBUG 2025-01-08 10:26:23,666 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:23,935 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:25,633 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': -12.501991977772045, 'z': 1}, 'bs': {'x': -45.44250385441512, 'y': 21.125130924056613}, 'pp': {'p1': 3.030613422393799, 'p2': -12.783408164978027}}
+DEBUG 2025-01-08 10:26:25,633 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:25,929 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:27,246 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 21.434710075070733, 'z': 1}, 'bs': {'x': 45.15460168241267, 'y': 34.571491913097205}, 'pp': {'p1': 24.78600001335144, 'p2': 0.5361306667327881}}
+DEBUG 2025-01-08 10:26:27,246 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:27,596 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:28,886 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': -14.663103505327864, 'z': 1}, 'bs': {'x': -53.442492456845606, 'y': -25.61444904736387}, 'pp': {'p1': 0.5680022239685059, 'p2': -15.200228691101074}}
+DEBUG 2025-01-08 10:26:28,886 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:29,237 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:30,260 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -12.60117212773172, 'z': 1}, 'bs': {'x': 53.14796216557076, 'y': 39.04748240735811}, 'pp': {'p1': -7.951691389083862, 'p2': 0.5636286735534668}}
+DEBUG 2025-01-08 10:26:30,260 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:30,746 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:31,659 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 21.502800063476684, 'z': 1}, 'bs': {'x': -61.442394038928036, 'y': -30.10677307907474}, 'pp': {'p1': 16.327332019805908, 'p2': 22.421464920043945}}
+DEBUG 2025-01-08 10:26:31,659 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:32,170 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:32,872 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -14.267969968395146, 'z': 1}, 'bs': {'x': 64.0, 'y': -36.0}, 'pp': {'p1': -11.522698640823364, 'p2': -0.5723512172698975}}
+DEBUG 2025-01-08 10:26:32,872 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:33,033 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:34,028 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': -7.371911695288141, 'z': 1}, 'bs': {'x': -72.31782977553985, 'y': 27.58837623790058}, 'pp': {'p1': -9.102863311767578, 'p2': -7.836331129074097}}
+DEBUG 2025-01-08 10:26:34,028 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:34,216 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:35,051 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 20.477332591796973, 'z': 1}, 'bs': {'x': 74.88452649040593, 'y': 33.28201177351375}, 'pp': {'p1': 19.932102918624878, 'p2': 0.6187534332275391}}
+DEBUG 2025-01-08 10:26:35,051 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:35,266 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:36,944 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -13.009786011836692, 'z': 1}, 'bs': {'x': 85.74929257125441, 'y': -30.869745325651593}, 'pp': {'p1': -15.445450782775879, 'p2': 10.287258625030518}}
+DEBUG 2025-01-08 10:26:36,944 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:37,727 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:38,595 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -4.8367351358623765, 'z': 1}, 'bs': {'x': 96.56851302058227, 'y': 28.731127840834397}, 'pp': {'p1': -5.277371168136597, 'p2': -24.949500560760498}}
+DEBUG 2025-01-08 10:26:38,595 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:39,536 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:40,155 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -38.05104562163458, 'y': 25.03656674690687, 'z': 1}, 'bs': {'x': 107.33126291998991, 'y': 26.832815729997478}, 'pp': {'p1': 18.03656674690687, 'p2': 17.44155764579773}}
+DEBUG 2025-01-08 10:26:40,155 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:40,209 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:41,502 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': 5.879455237826543, 'z': 1}, 'bs': {'x': 118.03471998505871, 'y': -25.143490647704816}, 'pp': {'p1': 5.880537999348277, 'p2': 19.84406590461731}}
+DEBUG 2025-01-08 10:26:41,502 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:42,180 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:42,717 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -24.091241544654757, 'z': 1}, 'bs': {'x': 131.08608485966622, 'y': -18.433980683390562}, 'pp': {'p1': -23.3346619480089, 'p2': -10.657778978347778}}
+DEBUG 2025-01-08 10:26:42,717 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:43,069 ia Commande envoyée: 4
+DEBUG 2025-01-08 10:26:43,822 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -20.688265304668796, 'z': 1}, 'bs': {'x': 139.2715036327889, 'y': 22.283440581246225}, 'pp': {'p1': -15.128148555755615, 'p2': -26.494710445404053}}
+DEBUG 2025-01-08 10:26:43,822 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:44,225 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:44,872 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': -36.0, 'y': -0.6329609036050083, 'z': 1}, 'bs': {'x': 149.81266841104713, 'y': 21.0674064953035}, 'pp': {'p1': 0.592557430267334, 'p2': -8.33561897277832}}
+DEBUG 2025-01-08 10:26:44,872 ia Commande envoyée: 1
+DEBUG 2025-01-08 10:26:45,278 ia Commande envoyée: 3
+DEBUG 2025-01-08 10:26:45,897 ia The right scores : 2
+DEBUG 2025-01-08 10:26:48,283 ia Contact avec la raquette! {'type': 'padel_contact', 'bp': {'x': 36.0, 'y': 9.250190783253414, 'z': 1}, 'bs': {'x': -29.441246638179376, 'y': 12.167045804553723}, 'pp': {'p1': 3.4024932384490967, 'p2': 9.95885968208313}}
+DEBUG 2025-01-08 10:26:48,284 ia Commande envoyée: 2
+DEBUG 2025-01-08 10:26:48,338 ia Connexion WebSocket fermée. Code : 1000, Message : 

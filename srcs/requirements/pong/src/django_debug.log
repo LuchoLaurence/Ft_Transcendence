@@ -1,0 +1,187 @@
+DEBUG game_manager 
+game_manager initialised
+
+DEBUG selector_events Using selector: EpollSelector
+DEBUG views Reçu: gameId=96d27c7d-03cf-4cdd-b0e8-c5cecca26cce, adminId=25738044-bcf3-4dc9-ad92-bbf109e05e68, gameMode=PONG_CLASSIC, playersList=['luc', 'b5fb1992-1632-447e-b1c5-5a6bf4b5448d']
+DEBUG game_consumers special_id = 25738044-bcf3-4dc9-ad92-bbf109e05e68
+DEBUG game_consumers admin tries to connect to the game: 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce
+DEBUG game_consumers new_user
+DEBUG game_consumers special_id = 6911c487-2e19-4ad2-bfc2-0bcfeee31012
+DEBUG game_consumers b5fb1992-1632-447e-b1c5-5a6bf4b5448d tries to connect to the game: 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce
+DEBUG game_consumers new_user
+DEBUG game_manager Player: b5fb1992-1632-447e-b1c5-5a6bf4b5448d is in waiting room !
+DEBUG game_manager players: {'b5fb1992-1632-447e-b1c5-5a6bf4b5448d': <pong_game.game_managers.game_consumers.GameConsumer object at 0x732a5e78d400>}
+DEBUG game_consumers Sending message to group: 25738044-bcf3-4dc9-ad92-bbf109e05e68
+message: {'type': 'player_connection', 'username': 'b5fb1992-1632-447e-b1c5-5a6bf4b5448d'}
+DEBUG game_consumers Admin is connected !
+DEBUG game_consumers Sending message to group: 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce
+message: {'type': 'player_connection', 'username': 'b5fb1992-1632-447e-b1c5-5a6bf4b5448d'}
+DEBUG _trace connect_tcp.started host='authentication' port=8000 local_address=None timeout=5.0 socket_options=None
+DEBUG _trace connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x732a5e101880>
+DEBUG _trace send_request_headers.started request=<Request [b'POST']>
+DEBUG _trace send_request_headers.complete
+DEBUG _trace send_request_body.started request=<Request [b'POST']>
+DEBUG _trace send_request_body.complete
+DEBUG _trace receive_response_headers.started request=<Request [b'POST']>
+DEBUG _trace receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json'), (b'Vary', b'Accept, origin'), (b'Allow', b'POST, OPTIONS'), (b'X-Frame-Options', b'DENY'), (b'Content-Length', b'30'), (b'X-Content-Type-Options', b'nosniff'), (b'Referrer-Policy', b'same-origin'), (b'Cross-Origin-Opener-Policy', b'same-origin'), (b'Server', b'daphne')])
+INFO _client HTTP Request: POST http://authentication:8000/api/authentication/verify_token/ "HTTP/1.1 200 OK"
+DEBUG _trace receive_response_body.started request=<Request [b'POST']>
+DEBUG _trace receive_response_body.complete
+DEBUG _trace response_closed.started
+DEBUG _trace response_closed.complete
+DEBUG _trace close.started
+DEBUG _trace close.complete
+DEBUG game_consumers luc tries to connect to the game: 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce
+DEBUG game_consumers new_user
+DEBUG game_manager Player: luc is in waiting room !
+DEBUG game_manager players: {'b5fb1992-1632-447e-b1c5-5a6bf4b5448d': <pong_game.game_managers.game_consumers.GameConsumer object at 0x732a5e78d400>, 'luc': <pong_game.game_managers.game_consumers.GameConsumer object at 0x732a5dcf2dc0>}
+DEBUG game_manager player start the game
+DEBUG game TEAM LIST DANS LA CLASSE GAME: [['luc'], ['b5fb1992-1632-447e-b1c5-5a6bf4b5448d']]
+DEBUG game players dans la classe Game: {'b5fb1992-1632-447e-b1c5-5a6bf4b5448d': <pong_game.game_managers.game_consumers.GameConsumer object at 0x732a5e78d400>, 'luc': <pong_game.game_managers.game_consumers.GameConsumer object at 0x732a5dcf2dc0>}
+DEBUG game luc ajouté à l'équipe left !
+DEBUG game b5fb1992-1632-447e-b1c5-5a6bf4b5448d ajouté à l'équipe right !
+DEBUG game Configuration finale des équipes : {'left': [<pong_game.game.player.Player object at 0x732a5e289a90>], 'right': [<pong_game.game.player.Player object at 0x732a5e289ac0>]}
+DEBUG game_consumers Sending message to group: 25738044-bcf3-4dc9-ad92-bbf109e05e68
+message: {'type': 'player_connection', 'username': 'luc'}
+DEBUG game_consumers Sending message to group: 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce
+message: {'type': 'player_connection', 'username': 'luc'}
+DEBUG game_consumers  admin as been disconnected
+DEBUG game_consumers add b5fb1992-1632-447e-b1c5-5a6bf4b5448d to channel
+DEBUG game_consumers add luc to channel
+DEBUG game_consumers export status loading
+DEBUG game_consumers Sending message to group: 25738044-bcf3-4dc9-ad92-bbf109e05e68
+message: {'type': 'export_status', 'status': 'loading'}
+DEBUG game_consumers Sending message to group: 96d27c7d-03cf-4cdd-b0e8-c5cecca26cce
+message: {'type': 'export_status', 'status': 'loading'}
+DEBUG game_consumers ID TO NICKNAME : {'b5fb1992-1632-447e-b1c5-5a6bf4b5448d': 'AI'}
+DEBUG game_consumers GAME DATA : {'input': {'up': 1, 'down': 2, 'stop_up': 3, 'stop_down': 4}, 'key': {'up': 'w', 'down': 's'}, 'arena': {'wallWidth': 1, 'size': {'x': 86, 'y': 64, 'z': 2}}, 'ball': {'rad': 1, 'pos': {'x': 0, 'y': 0, 'z': 1}, 'spd': {'x': 30, 'y': 30}}, 'padel': {'pos': {'x': 39, 'y': 0, 'z': 1.25}, 'spd': 45, 'size': {'x': 4, 'y': 12, 'z': 4}}, 'teams': {'left': ['luc'], 'right': ['b5fb1992-1632-447e-b1c5-5a6bf4b5448d']}, 'map': 'island', 'game_mode': 'PONG_CLASSIC'}
+DEBUG game_consumers GAME DATA : {'input': {'up': 1, 'down': 2, 'stop_up': 3, 'stop_down': 4}, 'key': {'up': 'w', 'down': 's'}, 'arena': {'wallWidth': 1, 'size': {'x': 86, 'y': 64, 'z': 2}}, 'ball': {'rad': 1, 'pos': {'x': 0, 'y': 0, 'z': 1}, 'spd': {'x': 30, 'y': 30}}, 'padel': {'pos': {'x': 39, 'y': 0, 'z': 1.25}, 'spd': 45, 'size': {'x': 4, 'y': 12, 'z': 4}}, 'teams': {'left': ['luc'], 'right': ['AI']}, 'map': 'island', 'game_mode': 'PONG_CLASSIC'}
+DEBUG game_consumers Export data
+DEBUG game_consumers b5fb1992-1632-447e-b1c5-5a6bf4b5448d receive export data
+DEBUG game_consumers luc receive export data
+DEBUG game_consumers export status in_progress
+DEBUG game_consumers Sending message to group: 25738044-bcf3-4dc9-ad92-bbf109e05e68
+message: {'type': 'export_status', 'status': 'in_progress'}
+DEBUG game_consumers Game start
+DEBUG game_consumers Game loop is running
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG game_consumers scored
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG game_consumers scored
+DEBUG ball switch
+DEBUG collisions in coll
+DEBUG game_consumers luc as been disconnected
+DEBUG game_consumers team check : luc is in left([<pong_game.game.player.Player object at 0x732a5e289a90>]) ?
+DEBUG game_consumers team check : luc is in right([<pong_game.game.player.Player object at 0x732a5e289ac0>]) ?
+DEBUG game_consumers opponant team : luc in right.
+DEBUG game_consumers right: 2
+DEBUG game_consumers game_end
+DEBUG game_consumers disconnect_all_user
+DEBUG game_consumers b5fb1992-1632-447e-b1c5-5a6bf4b5448d consumer want send new statde but is closed
+DEBUG game_consumers disconnect_admin
+DEBUG game_consumers game_end
+DEBUG game_consumers disconnect_all_user
+DEBUG game_consumers disconnect_admin
